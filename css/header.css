@@ -1,0 +1,117 @@
+@media only screen and (min-width: 100px) {
+    #header {
+        /*position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;*/
+        
+        position: relative;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px lightgray;
+        
+        z-index: 16;
+    }
+
+    #header .logo {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+
+        margin-right: 50px;
+    }
+
+    #header .menu {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    #header .menu .item {
+        color: rgb(160, 160, 160);
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        border-bottom: 3px solid transparent;
+
+        transition: all 150ms;
+    }
+
+    #header .menu .item:hover {
+        color: rgb(100, 100, 100);
+        border-bottom: 3px solid #F86A20;
+    }
+    
+    #header .button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #header {
+        /*position: fixed;
+        left: 0;
+        top: 0;*/
+        width: 100%;
+        
+        position: relative;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: white;
+        box-shadow: 0px 0px 5px 0px lightgray;
+        
+        z-index: 16;
+    }
+
+    #header .logo {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        
+        margin-left: 20px;
+    }
+
+    #header .menu {
+        display: none;
+    }
+    
+    #header .button {
+        width: 40px;
+        height: 24px;
+        
+        margin-right: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #header .button .line {
+        height: 4px;
+        
+        border-radius: 100px;
+        
+        background-color: rgb(130, 130, 130);
+    }
+}

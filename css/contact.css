@@ -1,0 +1,255 @@
+@media only screen and (min-width: 1000px) {
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 50px;
+        
+        background-color: white;
+        
+        background-color: rgb(250, 250, 250);
+    }
+
+    #contact .left {
+        margin-right: 100px;
+    }
+
+    #contact .left .title {
+        color: black;
+        font-size: 45px;
+        font-weight: bold;
+        font-family: "Dancing Script", sans-serif;
+
+        margin-bottom: 10px;
+    }
+
+    #contact .left .description {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+
+        margin-bottom: 50px;
+    }
+
+    #contact .left .info {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+
+        margin-bottom: 15px;
+    }
+
+    #contact .right {
+
+    }
+
+    #contact .right .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .right .form .input {
+        width: 500px;
+        height: 40px;
+
+        color: black;
+        font-size: 15px;
+        font-weight: normal;
+
+        margin: 5px;
+        padding: 5px;
+        padding-left: 10px;
+
+        border-radius: 10px;
+
+        outline: none;
+        border: none;
+
+        background-color: rgb(240, 240, 240);
+    }
+
+    #contact .right .form .text {
+        width: 500px;
+        height: 200px;
+
+        color: black;
+        font-size: 15px;
+        font-weight: normal;
+
+        margin: 5px;
+        padding: 10px;
+        padding-right: 5px;
+
+        border-radius: 10px;
+
+        outline: none;
+        border: none;
+
+        resize: none;
+
+        background-color: rgb(240, 240, 240);
+    }
+
+    #contact .right .form .submit {
+        height: 40px;
+
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+
+        outline: none;
+        border: none;
+
+        margin: 5px;
+        margin-top: 20px;
+
+        border-radius: 10px;
+
+        background-color: #F86A20;
+        box-shadow: 0px 0px 10px -5px gray;
+        
+        -webkit-appearance: none;
+    }
+    
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+        
+        background-color: white;
+        
+        background-color: rgb(250, 250, 250);
+    }
+
+    #contact .left {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin-bottom: 50px;
+    }
+
+    #contact .left .title {
+        color: black;
+        font-size: 45px;
+        font-weight: bold;
+        font-family: "Dancing Script", sans-serif;
+
+        margin-bottom: 10px;
+    }
+
+    #contact .left .description {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+
+        margin-bottom: 50px;
+    }
+
+    #contact .left .info {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+
+        margin-bottom: 15px;
+    }
+
+    #contact .right {
+
+    }
+
+    #contact .right .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .right .form .input {
+        width: 90%;
+        height: 40px;
+
+        color: black;
+        font-size: 15px;
+        font-weight: normal;
+
+        margin: 5px;
+        padding: 5px;
+        padding-left: 10px;
+
+        border-radius: 10px;
+
+        outline: none;
+        border: none;
+
+        background-color: rgb(240, 240, 240);
+    }
+
+    #contact .right .form .text {
+        width: 90%;
+        height: 200px;
+
+        color: black;
+        font-size: 15px;
+        font-weight: normal;
+
+        margin: 5px;
+        padding: 10px;
+        padding-right: 5px;
+
+        border-radius: 10px;
+
+        outline: none;
+        border: none;
+
+        resize: none;
+
+        background-color: rgb(240, 240, 240);
+    }
+
+    #contact .right .form .submit {
+        width: 92%;
+        height: 40px;
+
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+
+        outline: none;
+        border: none;
+
+        margin: 5px;
+        margin-top: 20px;
+
+        border-radius: 10px;
+
+        background-color: #F86A20;
+        box-shadow: 0px 0px 10px -5px gray;
+        
+        -webkit-appearance: none;
+    }
+    
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.contact-link {
+    color: inherit;
+    transition: all 200ms;
+}
+
+.contact-link:hover {
+    color: #F86A20;
+}

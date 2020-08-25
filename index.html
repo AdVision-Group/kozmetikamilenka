@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <title>Kozmetika Milenka - najlepšia kozmetika v Bratislave</title>
+        
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Kozmetika Bratislava. Ponúkame služby ako starostlivosť o pleť, úpravy obočia, manikúra, pedikúra a depilácie.">
+        <meta name="keywords" content="Kozmetika, kozmetika,
+                                       Bratislava, bratislava,
+                                       Pleť, pleť, starostlivosť o pleť,
+                                       Obočie, obočie, úprava obočia,
+                                       Manikúra, manikúra,
+                                       Pedikúra, pedikúra,
+                                       Depilácie, depilácie">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145101414-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-145101414-4');
+        </script>
+
+    </head>
+    
+    <body>
+        <h1 style="position: absolute; left: 10; top: 10; visibility: hidden">Kozmetika Bratislava</h1>
+        
+        <a id="arrow" href="#header">
+            <ion-icon id="icon" name="arrow-up-outline"></ion-icon>
+        </a>
+        
+        <div id="header">
+            <img class="logo" src="assets/logo-milenka.png" alt="logo" />
+            
+            <div class="menu">
+                <a class="item" href="index.html">Domov</a>
+                <a class="item" href="#services">Služby</a>
+                <a class="item" href="#partners">Partneri</a>
+                <a class="item" href="#gallery">Galéria</a>
+                <a class="item" href="#references">Referencie</a>
+                <a class="item" id="pricing-button" href="#pricing-plet">Cenník</a>
+                <a class="item" href="#aboutus">O nás</a>
+                <a class="item" href="#contact">Kontakt</a>
+            </div>
+            
+            <a class="button" id="menu-button" onclick="showMenu();">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+        
+        <div id="menu">
+            <div class="content">
+                <h2 class="title">Kozmetika Milenka</h2>
+                
+                <div class="items">
+                <div class="item">
+                    <ion-icon class="icon" name="home-outline"></ion-icon>
+                    <a class="link" href="index.html">Domov</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="cut-outline"></ion-icon>
+                    <a class="link" href="#services">Služby</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="people-outline"></ion-icon>
+                    <a class="link" href="#partners">Partneri</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="images-outline"></ion-icon>
+                    <a class="link" href="#gallery">Galéria</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="document-text-outline"></ion-icon>
+                    <a class="link" href="#references">Referencie</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="card-outline"></ion-icon>
+                    <a class="link" id="pricing-button" href="#pricing-plet">Cenník</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="help-outline"></ion-icon>
+                    <a class="link" href="#aboutus">O nás</a>
+                </div>
+                
+                <div class="item">
+                    <ion-icon class="icon" name="person-outline"></ion-icon>
+                    <a class="link" href="#contact">Kontakt</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slideshow">
+            <div id="slide-content">
+                <div class="slide">
+                    <img class="image" src="assets/slide2.jpg" alt="slide-1" />
+                    <div class="overlay"></div>
+                    <div class="info">
+                        <h3 class="title">Staráme sa o Vašu pleť</h3>
+                        <p class="text">
+                            Ponúkame extenzívne procedúry starostlivosti o Vašu pleť za výhodné cenové ponuky, vrátane ošetrenia aknóznej pleti, zrelej pleti a suchej pleti.
+                        </p>
+                        <a class="button" href="#services">Zisti viac</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="image" src="assets/slide1.jpg" alt="slide-2" />
+                    <div class="overlay"></div>
+                    <div class="info">
+                        <h3 class="title">Manikúra</h3>
+                        <p class="text">
+                            Postaráme sa o Vaše ruky. Ponúkame služby ako ošetrenie rúk, úprava nechtov, lakovanie, ale aj aplikácia a odstránenie gelláku.
+                        </p>
+                        <a class="button" href="#services">Zisti viac</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="image" src="assets/slide3.jpg" alt="slide-3" />
+                    <div class="overlay"></div>
+                    <div class="info">
+                        <h3 class="title">Estetické formovanie obočia</h3>
+                        <p class="text">
+                            Upravíme a nafarbíme obočie a mihalnice podľa Vašich predstáv.
+                        </p>
+                        <a class="button" href="#services">Zisti viac</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <a class="button active" id="btn1" onclick="scrollToSlide(1);"></a>
+                <a class="button" id="btn2" onclick="scrollToSlide(2);"></a>
+                <a class="button" id="btn3" onclick="scrollToSlide(3);"></a>
+            </div>
+        </div>
+        
+        <div id="services">
+            <h2 id="title">Naše služby</h2>
+            
+            <div style="height: 50px"></div>
+            
+            <div class="content">
+                <div class="panel">
+                    <a class="item" onclick="changeCategory('plet');" href="#pricing-plet">
+                        <img class="icon" id="service-plet-icon" src="assets/icon-skin-orange.png" alt="icon-skin-care" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-plet">Starostlivosť o pleť</h3>
+                            <p class="description">
+                                Ošetrenie aknóznej pleti a ošetrenie zrelej alebo suchej pleti
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="item" onclick="changeCategory('obocie')" href="#pricing-obocie">
+                        <img class="icon" id="service-obocie-icon" src="assets/icon-eyebrow-gray.png" alt="icon-eyebrow-care" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-obocie">Úpravy obočia</h3>
+                            <p class="description">
+                                Estetické formovanie a farbenie obočia a mihalníc
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="item" onclick="changeCategory('manikura')" href="#pricing-manikura">
+                        <img class="icon" id="service-manikura-icon" src="assets/icon-manicure-gray.png" alt="icon-manicure" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-manikura">Manikúra</h3>
+                            <p class="description">
+                                Ošetrenie rúk, úprava a lakovanie nechtov, gellák
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="panel">
+                    <a class="item" onclick="changeCategory('pedikura')" href="#pricing-pedikura">
+                        <img class="icon" id="service-pedikura-icon" src="assets/icon-pedicure-gray.png" alt="icon-pedicure" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-pedikura">Pedikúra</h3>
+                            <p class="description">
+                                Kompletná starostlivosť o chodidlá
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="item" onclick="changeCategory('depilacie')" href="#pricing-depilacie">
+                        <img class="icon" id="service-depilacie-icon" src="assets/icon-depilation-gray.png" alt="icon-depilation" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-depilacie">Depilácie</h3>
+                            <p class="description">
+                                Odstránenie nežiadúceho ochlpenia
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a class="item" onclick="changeCategory('samostatne')" href="#pricing-samostatne">
+                        <img class="icon" id="service-samostatne-icon" src="assets/icon-other-gray.png" alt="icon-other-services" />
+
+                        <div class="info">
+                            <h3 class="title" id="service-samostatne">Samostatné položky</h3>
+                            <p class="description">
+                                Doplnkové služby a ošetrenie
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <img id="bracket" src="assets/icon-bracket.png" alt="icon-bracket" />
+        </div>
+        
+        <div id="pricing-plet" class="pricing">
+            <h2 id="title">Cenník starostlivosti o pleť</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Čistenie pleti (napar., mech. čistenie, maska, ozonizér)</td>
+                    <td>19€</td>
+                </tr>
+                <tr>
+                    <td>Čistenie pleti PLUS (napar., mech. čistenie, maska, ozonizér)</td>
+                    <td>21€</td>
+                </tr>
+                <tr>
+                    <td>Čistenie pleti ultrazvukom (hydratácia pokožky)</td>
+                    <td>20€</td>
+                </tr>
+                <tr>
+                    <td>Kombinované čistenie pleti (mechan. čistenie + ultrazvuk)</td>
+                    <td>28€</td>
+                </tr>
+                <tr>
+                    <td>Čistenie chrbta (mechan. čistenie + maska)</td>
+                    <td>21€</td>
+                </tr>
+                <tr>
+                    <td>Čistenie chrbta PLUS (mechan. čistenie + maska)</td>
+                    <td>25€</td>
+                </tr>
+                <tr>
+                    <td>Masáž tváre a dekoltu (masaž + maska)</td>
+                    <td>20€</td>
+                </tr>
+                <tr>
+                    <td>Masáž tváre a dekoltu PLUS (masaž + maska)</td>
+                    <td>28€</td>
+                </tr>
+                <tr>
+                    <td>Masáž tváre ultrazvukom (masáž + maska)</td>
+                    <td>30€</td>
+                </tr>
+                <tr>
+                    <td>Masáž tváre ultrazvukom PLUS (masáž + maska)</td>
+                    <td>37€</td>
+                </tr>
+                <tr>
+                    <td>Mikromasáž očného okolia</td>
+                    <td>25€</td>
+                </tr>
+                <tr>
+                    <td>Kompletné ošetrenie pleti (čistenie + masáž, cca. 90 min.)</td>
+                    <td>37€</td>
+                </tr>
+                <tr>
+                    <td>Kompletné ošetrenie pleti PLUS (čistenie + masáž, cca. 90 min.)</td>
+                    <td>47€</td>
+                </tr>
+                <tr>
+                    <td>Kompletné ošetrenie pleti ultrazvukom (cca. 120 min.)</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>Lifting – 24-karátové zlato (masáž + ultrazvuk + aplikácia, cca. 120 min.)</td>
+                    <td>66€</td>
+                </tr>
+                <tr>
+                    <td>Masáž hlavy</td>
+                    <td>12€</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pricing-obocie" class="pricing">
+            <h2 id="title">Cenník úprav obočia</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Farbenie rias</td>
+                    <td>4€</td>
+                </tr>
+                <tr>
+                    <td>Farbenie obočia</td>
+                    <td>4€</td>
+                </tr>
+                <tr>
+                    <td>Úprava obočia</td>
+                    <td>3,50€</td>
+                </tr>
+                <tr>
+                    <td>Úprava obočia PLUS</td>
+                    <td>4€</td>
+                </tr>
+                <tr>
+                    <td>Trvalá na riasy + farbenie rias</td>
+                    <td>20€</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pricing-manikura" class="pricing">
+            <h2 id="title">Cenník manikúry</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Manikúra</td>
+                    <td>13€</td>
+                </tr>
+                <tr>
+                    <td>Manikúra pánska</td>
+                    <td>11€</td>
+                </tr>
+                <tr>
+                    <td>Masáž rúk</td>
+                    <td>7€</td>
+                </tr>
+                <tr>
+                    <td>Masáž rúk PLUS</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Lakovanie (2 vrstvy)</td>
+                    <td>7€</td>
+                </tr>
+                <tr>
+                    <td>Lakovanie PLUS (3 vrstvy)</td>
+                    <td>9€</td>
+                </tr>
+                <tr>
+                    <td>Odlakovanie</td>
+                    <td>3€</td>
+                </tr>
+                <tr>
+                    <td>Parafínový zábal</td>
+                    <td>6€</td>
+                </tr>
+                <tr>
+                    <td>Aplikácia Géllaku</td>
+                    <td>22€</td>
+                </tr>
+                <tr>
+                    <td>Odstránenie Géllaku</td>
+                    <td>8€</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pricing-pedikura" class="pricing">
+            <h2 id="title">Cenník pedikúry</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Pedikúra – mokrá</td>
+                    <td>16€</td>
+                </tr>
+                <tr>
+                    <td>Zábal</td>
+                    <td>8€</td>
+                </tr>
+                <tr>
+                    <td>Klasická masáž</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Reflexno-relaxačná masáž</td>
+                    <td>15€</td>
+                </tr>
+                <tr>
+                    <td>Ostrihanie nechtov</td>
+                    <td>6€</td>
+                </tr>
+                <tr>
+                    <td>Odstránenie kurieho oka</td>
+                    <td>2€</td>
+                </tr>
+                <tr>
+                    <td>Uvoľnenie zarasteného nechtu</td>
+                    <td>3€</td>
+                </tr>
+                <tr>
+                    <td>Aplikácia tamponáže</td>
+                    <td>1,50€</td>
+                </tr>
+                <tr>
+                    <td>Aplikácia špony</td>
+                    <td>35€</td>
+                </tr>
+                <tr>
+                    <td>Wellness pedikúra</td>
+                    <td>37€</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pricing-depilacie" class="pricing">
+            <h2 id="title">Cenník depilácií</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Kompletná depilácia nôh</td>
+                    <td>24€</td>
+                </tr>
+                <tr>
+                    <td>Predkolenie</td>
+                    <td>13€</td>
+                </tr>
+                <tr>
+                    <td>Stehná spredu / zozadu</td>
+                    <td>po 10€</td>
+                </tr>
+                <tr>
+                    <td>Oblasť bikín</td>
+                    <td>12€</td>
+                </tr>
+                <tr>
+                    <td>Podpazušie</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Predlaktie</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Celé ruky</td>
+                    <td>14€</td>
+                </tr>
+                <tr>
+                    <td>Časť chrbta</td>
+                    <td>12€</td>
+                </tr>
+                <tr>
+                    <td>Celý chrbát</td>
+                    <td>18€</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pricing-samostatne" class="pricing">
+            <h2 id="title">Cenník samostatných položiek</h2>
+            
+            <table>
+                <tr style="background-color: #F86A20; color: white; font-weight: bold;">
+                    <td>Procedúra</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Ozonizér</td>
+                    <td>3,50€</td>
+                </tr>
+                <tr>
+                    <td>Obklad</td>
+                    <td>2€</td>
+                </tr>
+                <tr>
+                    <td>Ampula</td>
+                    <td>6€</td>
+                </tr>
+                <tr>
+                    <td>Sérum</td>
+                    <td>3€</td>
+                </tr>
+                <tr>
+                    <td>Maska kolagénová</td>
+                    <td>6€</td>
+                </tr>
+                <tr>
+                    <td>Maska hydratačná</td>
+                    <td>4€</td>
+                </tr>
+                <tr>
+                    <td>Píling</td>
+                    <td>1€</td>
+                </tr>
+                <tr>
+                    <td>Zmäkčovač</td>
+                    <td>1€</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="partners">
+            <img class="background" src="assets/photo1.jpg" />
+            <div class="overlay"></div>
+            
+            <div class="left">
+                <h2 class="heading">Naši partneri</h2>
+                <h3 class="description">ZNAČKY, S KTORÝMI SPOLUPRACUJEME</h3>
+            </div>
+            
+            <div class="right">
+                <div class="panel">
+                    <!--<div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>-->
+                    
+                    <img class="item" src="assets/logo-cnd-shelac-silver.png" alt="logo-cnd-shelac" />
+                    <img class="item" src="assets/logo-elissa-beaute-silver.png" alt="logo-elissa-beaute" />
+                    <img class="item" src="assets/logo-enii-nails-silver.png" alt="logo-enii-nails" />
+                </div>
+                
+                <div class="panel">
+                    <!--<div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>-->
+                    
+                    <img class="item" src="assets/logo-essente-silver.png" alt="logo-essente" />
+                    <img class="item" src="assets/logo-etre-belle-silver.png" alt="logo-etre-belle" />
+                    <img class="item" src="assets/logo-orly-silver.png" alt="logo-orly" />
+                </div>
+            </div>
+        </div>
+        
+        <div id="gallery">
+            <h2 id="title">Galéria</h2>
+            
+            <div class="content">
+                <img class="image" src="assets/gallery-image-1.jpg" onclick="showImage('gallery-image-1')" alt="gallery-image 1" />
+                <img class="image" src="assets/gallery-image-2.jpg" onclick="showImage('gallery-image-2')" alt="gallery-image 2" />
+                <img class="image" src="assets/gallery-image-3.jpg" onclick="showImage('gallery-image-3')" alt="gallery-image 3" />
+                <img class="image" src="assets/gallery-image-4.jpg" onclick="showImage('gallery-image-4')" alt="gallery-image 4" />
+                <img class="image" src="assets/gallery-image-5.jpg" onclick="showImage('gallery-image-5')" alt="gallery-image 5" />
+                
+                <img class="image" src="assets/gallery-image-6.jpg" onclick="showImage('gallery-image-6')" alt="gallery-image 6" />
+                <img class="image" src="assets/gallery-image-7.jpg" onclick="showImage('gallery-image-7')" alt="gallery-image 7" />
+                <img class="image" src="assets/gallery-image-8.jpg" onclick="showImage('gallery-image-8')" alt="gallery-image 8" />
+                <img class="image" src="assets/gallery-image-9.jpg" onclick="showImage('gallery-image-9')" alt="gallery-image 9" />
+                <img class="image" src="assets/gallery-image-10.jpg" onclick="showImage('gallery-image-10')" alt="gallery-image 10" />
+                
+                <img class="image" src="assets/gallery-image-11.jpg" onclick="showImage('gallery-image-11')" alt="gallery-image 11" />
+                <img class="image" src="assets/gallery-image-12.jpg" onclick="showImage('gallery-image-12')" alt="gallery-image 12" />
+                <img class="image" src="assets/gallery-image-13.jpg" onclick="showImage('gallery-image-13')" alt="gallery-image 13" />
+                <img class="image" src="assets/gallery-image-14.jpg" onclick="showImage('gallery-image-14')" alt="gallery-image 14" />
+                <img class="image" src="assets/gallery-image-15.jpg" onclick="showImage('gallery-image-15')" alt="gallery-image 15" />
+            </div>
+        </div>
+        
+        <div id="gallery-image-container" onclick="hideImage()">
+            <img id="gallery-image" src="" alt="gallery-image-current" />
+        </div>
+        
+        <div id="references">
+            <h2 id="title">Čo o nás hovoria na sociálnych sieťach</h2>
+            
+            <div class="content">
+                <div class="panel">
+                    <div class="item">
+                        <h3 class="name">Lýdia Janáčová</h3>
+                        <p class="text">
+                            Bola som na pedikúru, veľmi milá pani, určite pôjdem aj na budúce, maximálna spokojnosť 😉
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h3 class="name">Martina Konáriková</h3>
+                        <p class="text">
+                            Táto kozmetička je veľmi milá a maximálne ústretová. Obočie robí najlepšie, ako som kedy zažila.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="panel">
+                    <div class="item">
+                        <h3 class="name">Jozefína Kissová</h3>
+                        <p class="text">
+                            Pekné upravený salón kozmetiky.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h3 class="name">Marek Jelok</h3>
+                        <p class="text">
+                            Super salón, kde sa o Vás pani Milenka vždy postará. Mamina chodí vždy spokojná 👍
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow">
+                <div class="inner" id="references-content">
+                    <div class="panel">
+                        <div class="item">
+                            <h3 class="name">Lýdia Janáčová</h3>
+                            <p class="text">
+                                Bola som na pedikúru, veľmi milá pani, určite pôjdem aj na budúce, maximálna spokojnosť 😉
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="item">
+                            <h3 class="name">Martina Konáriková</h3>
+                            <p class="text">
+                                Táto kozmetička je veľmi milá a maximálne ústretová. Obočie robí najlepšie, ako som kedy zažila.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="item">
+                            <h3 class="name">Jozefína Kissová</h3>
+                            <p class="text">
+                                Pekné upravený salón kozmetiky.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="item">
+                            <h3 class="name">Marek Jelok</h3>
+                            <p class="text">
+                                Super salón, kde sa o Vás pani Milenka vždy postará. Mamina chodí vždy spokojná 👍
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <a class="button active" id="rbtn1" onclick="scrollToReference(1);"></a>
+                <a class="button" id="rbtn2" onclick="scrollToReference(2);"></a>
+                <a class="button" id="rbtn3" onclick="scrollToReference(3);"></a>
+                <a class="button" id="rbtn4" onclick="scrollToReference(4);"></a>
+            </div>
+        </div>
+        
+        <div id="aboutus">
+            <div class="left">
+                <img class="image" src="assets/photo2.jpg" alt="image-about-us" />
+                <div class="overlay"></div>
+            </div>
+            
+            <div class="right">
+                <h2 class="title">Náš príbeh</h2>
+                <h3 class="info">VIAC AKO 20 ROKOV SKÚSENOSTÍ</h3>
+                
+                <p class="text">
+                    Sme malý "veľký" kozmetický salón v Bratislave na Tomášikovej ulici č. 33 s klasickými a zároveň najžiadanejšími ošetreniami tváre, rúk a nôh. Na tejto adrese pôsobíme už 20 rokov. Počas nášho pôsobneia prešiel salón inovatívnymi vylepšeniami, absolvovali sme množstvo odborných a moderných školení a kurzov.
+                    
+                    Vyučovali sme praktickú časť pre začínajúce kozmetičky. Poskytujeme služby aj firemným klientom v ich vlastných priestoroch, napríklad ku MDŽ. V súčasnej dobe otvárame ďaľšiu prevádzku kozmetiky a pedikúry vo Veľkom Grobe.
+                </p>
+            </div>
+        </div>
+        
+        <div id="contact">
+            <div class="left">
+                <h2 class="title">Kontaktujte nás</h2>
+                <h3 class="description">POŠLITE NÁM SPRÁVU</h2>
+                
+                <h4 class="info"><b>Adresa:</b> <a href="http://maps.google.com/?q=Kozmetika Milenka" class="contact-link">Tomášikova 33, Bratislava</a></h4>
+                <h4 class="info"><b>Telefón:</b> <a href="tel: +421-904-165-676" class="contact-link">0904 16 56 76</a></h4>
+                <h4 class="info"><b>E-mail:</b> <a href="mailto:mail@kozmetikamilenka.sk" class="contact-link">mail@kozmetikamilenka.sk</a></h4>
+            </div>
+            
+            <div class="right">
+                <form class="form" action="php/contact.php" method="post">
+                    <input class="input" type="text" name="name" placeholder="Vaše meno" required>
+                    <input class="input" type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea class="text" name="message" placeholder="Správa" rows="10" required></textarea>
+
+                    <input class="submit" name="submit" type="submit" value="Poslať správu">
+                </form>
+            </div>
+        </div>
+        
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10644.738263356918!2d17.1507201!3d48.164524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65f757a95e77e837!2sKozmetika%20Milenka!5e0!3m2!1ssk!2ssk!4v1594987523949!5m2!1ssk!2ssk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <div id="footer">
+            <div class="content">
+                <div class="panel">
+                    <img class="logo" src="assets/logo-white.png" />
+                </div>
+                
+                <div class="panel">
+                    <h2 class="title">Menu</h2>
+                    
+                    <a class="info" href="#header">Domov</a>
+                    <a class="info" href="#services">Služby</a>
+                    <a class="info" href="#partners">Partneri</a>
+                    <a class="info" href="#gallery">Galéria</a>
+                    <a class="info" href="#references">Referencie</a>
+                    <a class="info" href="#pricing">Cenník</a>
+                    <a class="info" href="#aboutus">O nás</a>
+                    <a class="info" href="#contact">Kontakt</a>
+                </div>
+                
+                <div class="panel">
+                    <h2 class="title">Služby</h2>
+                    
+                    <a class="info" href="#services">Staroslivosť o pleť</a>
+                    <a class="info" href="#services">Úpravy obočia</a>
+                    <a class="info" href="#services">Manikúra</a>
+                    <a class="info" href="#services">Pedikúra</a>
+                    <a class="info" href="#services">Depilácie</a>
+                    <a class="info" href="#services">Samostatné položky</a>
+                </div>
+                
+                <div class="panel">
+                    <h2 class="title">Kontakt</h2>
+                    
+                    <a href="http://maps.google.com/?q=Kozmetika Milenka"><h3 class="info">Tomášikova 33, Bratislava</h3></a>
+                    <a href="tel: +421-904-165-676"><h3 class="info" style="font-size: 25px;">0904 16 56 76</h3></a>
+                    <a href="mailto:mail@kozmetikamilenka.sk"><h3 class="info">mail@kozmetikamilenka.sk</h3></a>
+                    
+                    <div class="icons">
+                        <a href="https://www.facebook.com/kozmetikamilenka"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+                        <!--<ion-icon class="icon" name="logo-instagram"></ion-icon>
+                        <ion-icon class="icon" name="logo-twitter"></ion-icon>-->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <h2 class="text">© 2020 Kozmetika Milenka | Web created by <a style="color: #F86A20;" href="http://www.advision.sk">AdVision</a></h2>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            function showMenu() {
+                document.getElementById("menu").style.left = "0";
+                document.getElementById("menu-button").setAttribute("onclick","hideMenu()");
+                
+                document.getElementById("header").style.position = "fixed";
+            }
+            
+            function hideMenu() {
+                document.getElementById("menu").style.left = "-100%";
+                document.getElementById("menu-button").setAttribute("onclick","showMenu()");
+                
+                document.getElementById("header").style.position = "relative";
+            }
+        </script>
+        <script>
+            scrollToElement("#services .content .item");
+            scrollToElement("#header .menu .item");
+            scrollToElement("#footer a");
+            
+            scrollToElement("#menu a");
+            scrollToElement("#arrow");
+            
+            scrollToElement("#slideshow #slide-content a");
+            
+            function scrollToElement(button) {
+                $(document).ready(function(){
+                    $(button).on('click', function(event) {
+                        if (this.hash !== "") {
+                            event.preventDefault();
+
+                            var hash = this.hash;
+
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                                window.location.hash = hash;
+                            });
+                            
+                            document.getElementById("menu").style.left = "-100%";
+                            document.getElementById("menu-button").setAttribute("onclick","showMenu()");
+                            document.getElementById("header").style.position = "relative";
+                        }
+                    });
+                });   
+            }
+        </script>
+        <script>
+            document.getElementById("service-plet").style.color = "#F86A20";
+            document.getElementById("pricing-plet").style.display = "flex";
+        </script>
+        <script>
+            $(window).scroll(function() {    
+                var offset = window.pageYOffset;
+                
+                if (offset > 300) {
+                    document.getElementById("arrow").style.opacity = "1";
+                } else {
+                    document.getElementById("arrow").style.opacity = "0";
+                }
+            });
+        </script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
+</html>

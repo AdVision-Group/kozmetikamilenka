@@ -1,0 +1,253 @@
+@media only screen and (min-width: 1340px) {
+    #references {
+        display: flex;
+        flex-direction: column;
+
+        padding: 50px;
+
+        background-color: white;
+        
+        background-color: rgb(250, 250, 250);
+    }
+    
+    #references .slideshow {
+        display: none;
+    }
+    
+    #references .controls {
+        display: none;
+    }
+
+    #references .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+    
+    #references .inner {        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #references .content .panel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #references .content .panel .item {
+        width: 230px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px;
+        padding: 20px;
+
+        border-radius: 10px;
+
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px lightgray;
+
+        transition: all 200ms;
+    }
+
+    #references .content .panel .item:hover {
+        box-shadow: 0px 0px 10px 0px gray;
+    }
+
+    #references .content .panel .item .name {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+    #references .content .panel .item .text {
+        color: gray;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1060px) {
+    #references {
+        display: flex;
+        flex-direction: column;
+
+        padding: 50px;
+
+        background-color: white;
+        
+        background-color: rgb(250, 250, 250);
+    }
+    
+    #references .slideshow {
+        display: none;
+    }
+    
+    #references .controls {
+        display: none;
+    }
+
+    #references .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 50px;
+    }
+    
+    #references .inner {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #references .content .panel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #references .content .panel .item {
+        width: 400px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px;
+        padding: 20px;
+
+        border-radius: 10px;
+
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px lightgray;
+
+        transition: all 200ms;
+    }
+
+    #references .content .panel .item:hover {
+        box-shadow: 0px 0px 10px 0px gray;
+    }
+
+    #references .content .panel .item .name {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+
+        margin-bottom: 30px;
+    }
+
+    #references .content .panel .item .text {
+        color: gray;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #references {
+        display: flex;
+        flex-direction: column;
+        
+        padding-top: 20px;
+
+        background-color: white;
+        
+        background-color: rgb(250, 250, 250);
+    }
+
+    #references .content {
+        display: none;
+    }
+    
+    #references .slideshow {
+        width: 100vw;
+    }
+    
+    #references .slideshow .inner {
+        width: 400vw;
+        
+        display: flex;
+        flex-direction: row;
+        
+        margin-top: 20px;
+        
+        transition: all 500ms ease-in-out;
+    }
+    
+    #references .slideshow .inner .panel {
+        width: 100vw;
+        
+        display: flex;
+    }
+    
+    #references .slideshow .inner .panel .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin: 30px;
+        padding: 20px;
+        
+        flex: 1;
+        
+        border-radius: 10px;
+        
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px lightgray;
+    }
+    
+    #references .slideshow .inner .panel .item .name {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+
+        margin-bottom: 30px;
+    }
+    
+    #references .slideshow .inner .panel .item .text {
+        color: gray;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 27px;
+    }
+    
+    #references .controls {
+        display: flex;
+        flex-direction: row;
+        
+        align-self: center;
+        
+        margin-bottom: 20px;
+    }
+    
+    #references .controls .button {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        
+        margin-right: 5px;
+        margin-left: 5px;
+        
+        border: 2px solid lightgray;
+        
+        transition: all 200ms;
+    }
+    
+    #references .controls .active {
+        background-color: #F86A20;
+        border: 2px solid #F86A20;
+    }
+}
